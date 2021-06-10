@@ -1,9 +1,13 @@
+const path = require('path')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     entry: './src/client/index.js',
     mode: 'production',
+    output: {
+        path: path.join(__dirname, 'dist'),
+    },
     module: {
         rules: [{
             test: '/\.js$/',
