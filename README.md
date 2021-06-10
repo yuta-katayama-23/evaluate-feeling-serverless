@@ -33,6 +33,7 @@ This project is evaluate you feeling page and this running server-less.<br>
 ### Testing
 
 - UnitTest : Jest
+- API Test : Jest, supertest（mock を利用したテストも実装）<br>※supertest を利用しない API テスト(エリアスにして呼び出す)も実装
 
 ## site
 
