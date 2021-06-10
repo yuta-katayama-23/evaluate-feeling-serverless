@@ -3,29 +3,22 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
 // js module
-import {
-    selectFeeling
-} from './module/select-feeling'
-import {
-    removeIcon
-} from './module/remove-icon'
-import {
-    removeText
-} from './module/remove-text'
+import { selectFeeling } from './module/select-feeling'
+import { removeIcon } from './module/remove-icon'
+import { drewSubmittingBtn, drewSubmitBtn } from './module/form'
 
 /**
  * i am module and i judge feeling from input text
  */
-export function sentimentAnalysis(event) {
+export const sentimentAnalysis = async (event) => {
     event.preventDefault();
+    drewSubmittingBtn();
 
     if (txtEl.value) {
-        fetchData(`${baseUrl}/fetchMeaningCloud`, {
-            txt: txtEl.value
-        }).then((data) => {
-            renderResult(data.score_tag);
-        });
+        const resData = await fetchData(`${baseUrl}/fetchMeaningCloud`, { txt: txtEl.value });
+        renderResult(resData.score_tag);
     }
+    drewSubmitBtn();
 }
 
 // netify server-less

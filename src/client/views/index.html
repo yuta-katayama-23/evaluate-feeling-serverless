@@ -25,7 +25,11 @@
                         <div class="valid-feedback">OK</div>
                     </div>
                     <div class="mb-3">
-                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <button id="submit-btn" class="btn btn-primary" type="button">Submit</button>
+                        <button id="loading-btn" class="btn btn-primary display-none" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Submiting...
+                        </button>
                     </div>
                 </form>
             </section>

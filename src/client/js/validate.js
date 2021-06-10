@@ -1,4 +1,4 @@
-const subEl = document.querySelector('.btn-primary');
+const subEl = document.querySelector('#submit-btn');
 const txtEl = document.querySelector('#txt');
 const pattern = new RegExp('[a-zA-Z]');
 
