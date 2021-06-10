@@ -1,7 +1,7 @@
 import { selectFeeling } from '../../../../src/client/js/module/select-feeling';
 
 describe("Testing the selectFeeling functionality", () => {
-    test('in case score_tag is P+', () => {
+    it('in case score_tag is P+', () => {
         expect(selectFeeling('P+')).toEqual({
             key: 'P+',
             value: 'strong positive',
@@ -9,7 +9,7 @@ describe("Testing the selectFeeling functionality", () => {
         });
     });
 
-    test('in case score_tag is P', () => {
+    it('in case score_tag is P', () => {
         expect(selectFeeling('P')).toEqual({
             key: 'P',
             value: 'positive',
