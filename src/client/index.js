@@ -1,25 +1,14 @@
 // js module
-import {
-    validate
-} from './js/validate';
-import {
-    sentimentAnalysis
-} from './js/sentiment-analysis';
+import { validate } from './js/validate';
+import { sentimentAnalysis } from './js/sentiment-analysis';
 
-// Sass
-import './styles/resets.scss';
+// Scss
 import './styles/base.scss';
-// import './styles/footer.scss'
-// import './styles/form.scss'
 import './styles/header.scss'
 
-// image
-import './img/strong_positive.jpg';
-import './img/positive.jpg';
-import './img/neutral.jpg';
-import './img/negative.jpg';
-import './img/strong_negative.jpg';
-import './img/none.jpg';
+// import all img
+const importAll = (r) => r.keys().forEach(r);
+importAll(require.context('../', true, /\.jng$/));
 
 // const definition
 const subEl = document.querySelector('.btn-primary');
@@ -28,8 +17,3 @@ const subEl = document.querySelector('.btn-primary');
 subEl.addEventListener('click', (event) => {
     sentimentAnalysis(event);
 });
-
-export {
-    sentimentAnalysis,
-    validate
-};
