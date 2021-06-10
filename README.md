@@ -12,6 +12,14 @@
 This project is evaluate you feeling page and this running server-less.<br>
 このプロジェクトは、英語で文章を入力すると、その文章からあなたの今の感情がどうであるか？を [meaningcloud.com の API ](https://learn.meaningcloud.com/developer/sentiment-analysis/2.1/doc) を用いて判定するものです。また、server-less アーキテクチャを採用しています。
 
+### How to install
+
+1. git clone
+1. npm install
+1. create .env file in root directory and it has "API_KEY"
+
+> API_KEY=your api key
+
 ## function
 
 - you can know your feeling condition by your input text<br>入力された文章から今のあなたの感情を分析しそれを画面上に描画します（ニコニコアイコンなどで）
