@@ -37,4 +37,6 @@ This project is evaluate you feeling page and this running server-less.<br>
 
 ## site
 
+以下からサイトを実際に動かす事ができます
+
 - https://frosty-hoover-31a6e9.netlify.app/
