@@ -1,6 +1,4 @@
-import {
-    removeText
-} from '../../module/remove-text';
+import { removeText } from '../../../../src/client/js/module/remove-text';
 
 describe("Testing the removeText functionality", () => {
     test('in case exit icon', () => {

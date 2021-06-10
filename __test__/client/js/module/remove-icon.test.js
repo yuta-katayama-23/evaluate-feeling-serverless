@@ -1,6 +1,4 @@
-import {
-    removeIcon
-} from '../../module/remove-icon';
+import { removeIcon } from '../../../../src/client/js/module/remove-icon';
 
 describe("Testing the removeIcon functionality", () => {
     test('in case exit icon', () => {

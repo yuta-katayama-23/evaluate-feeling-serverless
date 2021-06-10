@@ -1,6 +1,4 @@
-import {
-    selectFeeling
-} from '../../module/select-feeling';
+import { selectFeeling } from '../../../../src/client/js/module/select-feeling';
 
 describe("Testing the selectFeeling functionality", () => {
     test('in case score_tag is P+', () => {
