@@ -1,10 +1,9 @@
 {
-  "name": "example-project",
+  "name": "evaluate-feeling-serverless",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "node src/server/index.js",
     "build-dev": "webpack serve --config webpack.dev.js",
     "build-dev-nt": "netlify-lambda serve ./src/server",
     "build-prod": "webpack --config webpack.prod.js && netlify-lambda build ./src/server"
@@ -13,6 +12,11 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
   "dependencies": {
     "@popperjs/core": "^2.9.1",
     "axios": "^0.21.1",
