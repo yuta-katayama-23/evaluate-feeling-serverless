@@ -7,8 +7,16 @@ import './styles/base.scss';
 import './styles/header.scss'
 
 // import all img
-const importAll = (r) => r.keys().forEach(r);
-importAll(require.context('../', true, /\.jng$/));
+import './img/strong_positive.jpg';
+import './img/positive.jpg';
+import './img/neutral.jpg';
+import './img/negative.jpg';
+import './img/strong_negative.jpg';
+import './img/none.jpg';
+
+// FIXME 以下だとNetifyでうまくいかない。理由を調べる。
+// const importAll = (r) => r.keys().forEach(r);
+// importAll(require.context('../', true, /\.jng$/));
 
 // const definition
 const subEl = document.querySelector('#submit-btn');
