@@ -6,7 +6,8 @@
     "test": "jest",
     "build-dev": "webpack serve --config webpack.dev.js",
     "build-dev-nt": "netlify-lambda serve ./src/server",
-    "build-prod": "webpack --config webpack.prod.js && netlify-lambda build ./src/server"
+    "build-prod": "webpack --config webpack.prod.js && netlify-lambda build ./src/server",
+    "build": "webpack --config webpack.dev.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "@popperjs/core": "^2.9.1",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta2",
+    "copy-webpack-plugin": "^9.0.0",
     "core-js": "^3.9.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
