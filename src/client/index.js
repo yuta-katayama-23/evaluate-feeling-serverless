@@ -1,7 +1,8 @@
 // js module
+import { validate } from './js/validate';
 import { sentimentAnalysis } from './js/sentiment-analysis';
 
-// Scss
+// scss
 import './styles/base.scss';
 import './styles/header.scss'
 
